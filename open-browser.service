@@ -6,8 +6,9 @@ Description=launch chromium-browser
 User=kotobuki8pi
 Environment=DISPLAY=:0
 
+#ExecStart=/home/kotobuki8pi/mft/systemd_autorun/autorun
 ExecStart=chromium-browser --kiosk
-#ExecStart=chromium-browser --kiosk file:///home/[user]/test.html
+#file:///home/[user]/test.html
 #ExecStart=chromium-browser --kiosk http://localhost:4200
 
 [Install]
