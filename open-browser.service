@@ -1,0 +1,11 @@
+[Unit]
+Description=launch chromium-browser
+
+[Service]
+User=kotobuki8pi
+Environment=DISPLAY=:0
+ExecStart=chromium-browser --kiosk file:///home/kotobuki8pi/mft/systemd_autorun/test.html
+#ExecStart=chromium-browser --kiosk http://localhost:4200
+
+[Install]
+WantedBy=user@.service
