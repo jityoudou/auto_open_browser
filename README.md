@@ -1,7 +1,6 @@
 ## 起動時にブラウザを自動立ち上げする手順  
   
 $ sudo mv open-browser.service /etc/systemd/system/  
-$ mv test.html /home/[user]/
 $ sudo systemctl daemon-reload  
 ### 自動起動有効化  
 $ sudo systemctl enable open-browser.service  

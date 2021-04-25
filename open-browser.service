@@ -6,8 +6,8 @@ Description=launch chromium-browser
 User=kotobuki8pi
 Environment=DISPLAY=:0
 
-#test html file
-ExecStart=chromium-browser --kiosk file:///home/[user]/test.html
+ExecStart=chromium-browser --kiosk
+#ExecStart=chromium-browser --kiosk file:///home/[user]/test.html
 #ExecStart=chromium-browser --kiosk http://localhost:4200
 
 [Install]
