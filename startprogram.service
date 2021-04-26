@@ -1,14 +1,14 @@
 [Unit]
-Description=launch chromium-browser
-
+Description=start service
+#After=open-browser.service
 [Service]
 #User=[your raspi name]
 User=kotobuki8pi
 Environment=DISPLAY=:0
 
-#ExecStart=/home/kotobuki8pi/mft/systemd_autorun/autorun.sh
-#./start_service
+#ExecStart=/bin/echo test
 ExecStart=chromium-browser --kiosk
+#/home/kotobuki8pi/mft/digital-catan/dummy_start_service
 
 [Install]
 WantedBy=user@.service

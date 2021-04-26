@@ -1,0 +1,13 @@
+[Unit]
+Description=chromiumautorun
+
+[Service]
+Environment=DISPLAY=:0.0
+Environment=XAUTHORITY=/home/kotobuki8pi/.Xauthority
+ExecStart=/usr/bin/chromium-browser --noerrdialogs --disable-infobars --disable-background-mode  --app=https://localhost/
+Restart=on-abort
+User=kotobuki8pi
+Group=pi
+
+[Install]
+WantedBy=multi-user.target
